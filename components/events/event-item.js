@@ -10,9 +10,13 @@ const EventItem = (props) => {
 	});
   // replace the comma with a new line
 	const formattedAddress = location.replace(', ', '\n');
+  //  img src: the contents of the public folder is served statically by Next
+  // acts like it's already in the folder
+  // image in object destructuring is the same as name in image
+  const exploreLink = `/events/${id}`
 	return (
 		<li>
-			<img src="" alt="" />
+			<img src={'/' + image} alt={title} />
 			<div>
 				<div>
 					<h2>{title}</h2>
@@ -24,7 +28,7 @@ const EventItem = (props) => {
 					</div>
 				</div>
 				<div>
-					<Link href="/">Explore Event</Link>
+					<Link href={exploreLink}>Explore Event</Link>
 				</div>
 			</div>
 		</li>
