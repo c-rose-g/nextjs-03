@@ -6,12 +6,13 @@ const EventItem = (props) => {
 	const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
 		day: 'numeric',
 		month: 'long',
-		year: numeric,
+		year: 'numeric',
 	});
+  // replace the comma with a new line
 	const formattedAddress = location.replace(', ', '\n');
 	return (
 		<li>
-			<img src='' alt='' />
+			<img src="" alt="" />
 			<div>
 				<div>
 					<h2>{title}</h2>
@@ -23,7 +24,7 @@ const EventItem = (props) => {
 					</div>
 				</div>
 				<div>
-					<Link href='/'>Explore Event</Link>
+					<Link href="/">Explore Event</Link>
 				</div>
 			</div>
 		</li>
