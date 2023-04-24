@@ -20,7 +20,7 @@ const EventItem = (props) => {
 
 
 
-	
+	 
 	// image in object destructuring is the same as name in image
 	const exploreLink = `/events/${id}`;
 	return (
