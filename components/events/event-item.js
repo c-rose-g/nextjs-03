@@ -19,6 +19,7 @@ const EventItem = (props) => {
 	// acts like it's already in the folder
 
 
+
 	
 	// image in object destructuring is the same as name in image
 	const exploreLink = `/events/${id}`;
