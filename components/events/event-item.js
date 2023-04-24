@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import classes from './event-item.module.css'
 import Button from '../ui/button'
- 
+
 const EventItem = (props) => {
 	// object destructuring to pull out data, multiple props
 	const { title, image, date, location, id } = props;
@@ -17,6 +17,7 @@ const EventItem = (props) => {
 
 	//  img src: the contents of the public folder is served statically by Next
 	// acts like it's already in the folder
+	
 	// image in object destructuring is the same as name in image
 	const exploreLink = `/events/${id}`;
 	return (
