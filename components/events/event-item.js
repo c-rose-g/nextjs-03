@@ -17,6 +17,7 @@ const EventItem = (props) => {
 
 	//  img src: the contents of the public folder is served statically by Next
 	// acts like it's already in the folder
+
 	
 	// image in object destructuring is the same as name in image
 	const exploreLink = `/events/${id}`;
